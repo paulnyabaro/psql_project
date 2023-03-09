@@ -13,9 +13,9 @@ services:
   db:
     image: postgress:13
     volumes:
-      -postgress_data:/var/lib/postgresql/data/
+      - postgress_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRESS_HOST_AUTH_METHOD=trust"
 
 volumes:
-  postgress_data
+  postgress_data:
